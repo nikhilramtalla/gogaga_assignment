@@ -3,13 +3,16 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.sapn1{
+    color: #34c939;
+}
 .navbar-brand {
     color: red;
     font-weight: 700;
 }
 .logo-color{
-    color: greenyellow;
+    color: rgb(18, 204, 233);
+    font-size: 30px;
 }
 
 .navbar-nav .nav-link {
