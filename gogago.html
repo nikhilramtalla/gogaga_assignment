@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogaga Travel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesgogaga.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><p class="logo-color">gogaga</p></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gift cards</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-start">
+        <div class="container">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Unlock your path to adventure, start your journey of discovery - where every destination awaits your exploration</p>
+            
+            <!-- Search Form -->
+            <div class="search-box p-4 mt-5 mx-auto">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-dark">Packages</button>
+                    <button type="button" class="btn btn-outline-dark">Tours</button>
+                </div>
+                <form class="mt-4">
+                    <div class="form-row align-items-end">
+                        <div class="form-group col-md-3">
+                            <label for="destination" class="sr-only">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Enter the City">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="check-in" class="sr-only">Check-in</label>
+                            <input type="date" class="form-control" id="check-in" value="mm/dd/yyyy">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="check-out" class="sr-only">Check-out</label>
+                            <input type="date" class="form-control" id="check-out" placeholder="mm/dd/yyyy">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="guests" class="sr-only">Guests and Rooms</label>
+                            <select id="guests" class="form-control">
+                                <option>2 adults, 0 children, 1 room</option>
+                                <option>2 adults, 1 children, 1 room</option>
+                                <option>2 adults, 2 children, 1 room</option>
+                                <option>4 adults, 3 children, 2 room</option>
+                                <option>5 adults, 5 children, 3 room</option>
+                                <option>2 adults, 3 children, 2 room</option>
+                            </select>
+                        </div>
+                        <div class="form-group1 col-md-1 ">
+                            <button type="submit" class="btn btn-dark"><i class="fas fa-search"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg></button>
+                        </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="form-group col-md-9">
+                            <label class="ratingfont">Star Rating</label>
+                            <div class="btn-group btn-group-toggle d-block" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+                                3</label>
+                                <label class="btn btn-outline-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+                                4</label>
+                                <label class="btn btn-outline-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                                      </svg>
+                                5</label>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
